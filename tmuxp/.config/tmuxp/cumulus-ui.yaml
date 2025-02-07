@@ -1,0 +1,8 @@
+session_name: cumulus-ui
+start_directory: ${HOME}/code/cumulus/cumulus-ui
+windows:
+  - window_name: cumulus-ui
+    layout: even-horizontal
+    panes:
+      - "nvim -c ':Telescope find_files'"
+      - zsh

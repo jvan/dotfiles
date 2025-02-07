@@ -1,0 +1,16 @@
+session_name: nsi-api
+windows:
+  - window_name: local-dev-docker
+    start_directory: ${HOME}/code/local-dev-docker
+    layout: main-vertical
+    panes:
+      - nvim
+      - zsh
+
+  - window_name: nsi-api
+    focus: true
+    start_directory: ${HOME}/code/nsi-api
+    layout: main-vertical
+    panes:
+      - "nvim -c ':Telescope find_files'"
+      - zsh

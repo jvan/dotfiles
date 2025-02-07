@@ -1,0 +1,16 @@
+session_name: nix-config
+windows:
+  - window_name: dotfiles
+    start_directory: ${HOME}/code/dotfiles
+    layout: main-vertical
+    panes:
+      - nvim
+      - zsh
+
+  - window_name: nix-config
+    focus: true
+    start_directory: ${HOME}/code/nix-config
+    layout: main-vertical
+    panes:
+      - nvim
+      - zsh

@@ -1,0 +1,16 @@
+session_name: cumulus-api
+windows:
+  - window_name: airflow-config
+    start_directory: ${HOME}/code/cumulus/airflow-config
+    layout: main-vertical
+    panes:
+      - nvim
+      - zsh
+
+  - window_name: cumulus-api
+    start_directory: ${HOME}/code/cumulus/cumulus-api
+    focus: true
+    layout: main-vertical
+    panes:
+      - nvim
+      - zsh
