@@ -50,9 +50,24 @@ return {
 				capabilities = capabilities,
 			})
 
+			vim.diagnostic.config({
+				virtual_text = true,
+				serverity_sort = true,
+				float = {
+					border = "rounded",
+					source = "always",
+				},
+			})
+
+			vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+
+			vim.lsp.handlers["textDocument/signatureHelp"] =
+				vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})
+			vim.keymap.set({ "n", "v" }, "<leader>do", vim.diagnostic.open_float, {})
 		end,
 	},
 }
