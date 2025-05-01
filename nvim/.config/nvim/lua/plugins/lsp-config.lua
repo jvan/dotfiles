@@ -25,6 +25,10 @@ return {
 				capabilities = capabilities,
 			})
 
+			lspconfig.elmls.setup({
+				capabilities = capabilities,
+			})
+
 			lspconfig.eslint.setup({
 				capabilities = capabilities,
 			})
@@ -47,18 +51,6 @@ return {
 			})
 
 			lspconfig.pyright.setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig.gopls.setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig.elmls.setup({
-				capabilities = capabilities,
-			})
-
-			lspconfig.eslint.setup({
 				capabilities = capabilities,
 			})
 
