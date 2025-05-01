@@ -9,3 +9,7 @@ bindkey '^[[B' history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
 
 eval "$(starship init zsh)"
+
+alias cat="bat"
+alias cd="z"
+alias ls="eza"
