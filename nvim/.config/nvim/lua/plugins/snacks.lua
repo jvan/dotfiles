@@ -18,6 +18,10 @@ return {
 		scope = { enabled = true },
 		scroll = { enabled = true },
 		statuscolumn = { enabled = true },
+		terminal = {
+			enabled = true,
+			win = { position = "float" },
+		},
 		words = { enabled = true },
 		styles = {
 			notification = {
